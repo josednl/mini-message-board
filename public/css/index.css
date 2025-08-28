@@ -57,6 +57,12 @@ h1 {
 	gap: 1rem;
 }
 
+.message-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .message-content {
 	flex: 1;
 	overflow-wrap: break-word;
@@ -85,4 +91,23 @@ h1 {
 
 .btn-open:hover {
 	background-color: #2980b9;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.delete-form {
+  margin: 0;
 }
