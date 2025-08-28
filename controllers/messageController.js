@@ -1,4 +1,4 @@
-const { getAllMessages, addMessage } = require('../models/messageModel');
+const { getAllMessages, addMessage, getMessageById } = require('../models/messageModel');
 
 function showAllMessages(req, res) {
     const messages = getAllMessages();
@@ -16,7 +16,19 @@ function createMessage(req, res) {
     res.redirect('/');
 }
 
+function showMessageDetail(req, res) {
+    const messageId = req.params.id;
+    const message = getMessageById(messageId);
+
+    if(!message) {
+        return res.status(404).render('404');
+    }
+
+    res.render('message-detail', { message });
+}
+
 module.exports = {
     showAllMessages,
-    createMessage
+    createMessage,
+    showMessageDetail
 }

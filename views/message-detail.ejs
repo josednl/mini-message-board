@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Message Detail</title>
+		<link rel="stylesheet" href="/css/message-detail.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Message detail</h1>
+
+			<div class="message-detail">
+				<p><strong>User:</strong> <%= message.user %></p>
+				<p><strong>Message:</strong> <%= message.text %></p>
+				<p>
+					<small
+						>Sent on: <%= message.added.toLocaleString()
+						%></small
+					>
+				</p>
+			</div>
+
+			<a href="/" class="btn-back">← Back to Messages</a>
+		</div>
+	</body>
+</html>

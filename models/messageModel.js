@@ -1,15 +1,18 @@
 const messages = [
 	{
+		id: '1',
 		text: 'Hi there!',
 		user: 'Amando',
 		added: new Date(),
 	},
 	{
+		id: '2',
 		text: 'Hello World!',
 		user: 'Charles',
 		added: new Date(),
 	},
     {
+		id: '3',
 		text: 'How are you?!',
 		user: 'Anthony',
 		added: new Date(),
@@ -18,6 +21,7 @@ const messages = [
 
 function addMessage(user, text) {
     const newMessage = {
+		id: (messages.length + 1).toString(),
         text,
         user,
         added: new Date()
@@ -30,12 +34,12 @@ function getAllMessages() {
     return messages;
 }
 
-function getMessagesByUser(user) {
-    return messages.find(m => m.user === user);
+function getMessageById(id) {
+    return messages.find(m => m.id === id);
 }
 
 module.exports = {
     addMessage,
     getAllMessages,
-    getMessagesByUser
+    getMessageById
 }

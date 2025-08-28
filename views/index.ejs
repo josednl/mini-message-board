@@ -16,9 +16,13 @@
 			<ul class="message-list">
 				<% messages.forEach(message => { %>
 				<li class="message">
-					<strong><%= message.user %>:</strong> <%= message.text %>
-					<br />
-					<small><%= message.added.toLocaleString() %></small>
+					<div class="message-content">
+						<strong><%= message.user %>:</strong> <%= message.text
+						%>
+						<br />
+						<small><%= message.added.toLocaleString() %></small>
+					</div>
+					<a href="/messages/<%= message.id %>" class="btn-open">Open</a>
 				</li>
 				<% }) %>
 			</ul>
