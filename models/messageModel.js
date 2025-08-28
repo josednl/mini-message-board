@@ -1,3 +1,4 @@
+const { randomUUID } = require('crypto');
 const messages = [
 	{
 		id: '1',
@@ -21,7 +22,7 @@ const messages = [
 
 function addMessage(user, text) {
     const newMessage = {
-		id: (messages.length + 1).toString(),
+		id: randomUUID(),
         text,
         user,
         added: new Date()
