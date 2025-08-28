@@ -1,0 +1,82 @@
+/* public/css/messages.css */
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f1f3f6;
+	color: #333;
+}
+
+.container {
+	max-width: 600px;
+	margin: 3rem auto;
+	padding: 2rem;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: #2c3e50;
+}
+
+.message-form h2 {
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	color: #34495e;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+input[type='text'],
+textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button {
+	background-color: #3498db;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #2980b9;
+}
+
+.btn-back {
+	display: inline-block;
+	background-color: #ccc;
+	color: #333;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+	background-color: #bbb;
+}
